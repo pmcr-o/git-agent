@@ -1,0 +1,21 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.index",
+  "agent": "git-agent",
+  "entries": [
+    {
+      "route": "@git-agent /git:commit-files",
+      "plugin": "git",
+      "skill": "commit-files",
+      "description": "Create a bounded local Git commit from explicit workspace-relative paths. Dry-run by default; Apply stages only named paths and commits locally. Never pushes.",
+      "path": ".pmcro/plugins/git/skills/commit-files"
+    },
+    {
+      "route": "@git-agent /git:inspect-repository",
+      "plugin": "git",
+      "skill": "inspect-repository",
+      "description": "Inspect a workspace Git repository using read-only status, branch, HEAD, log, and diff-summary operations.",
+      "path": ".pmcro/plugins/git/skills/inspect-repository"
+    }
+  ]
+}

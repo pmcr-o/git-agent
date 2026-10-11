@@ -1,0 +1,16 @@
+{
+  "schema": "dotagents.manifest/v1",
+  "name": "git-agent",
+  "owner": "pmcr-o",
+  "description": "Local Git domain orchestrator for bounded repository inspection and explicit local commit mechanics.",
+  "invocationField": "plugin",
+  "plugins": [
+    {
+      "name": "git",
+      "source": "./.pmcro/plugins/git",
+      "description": "git capabilities owned by git-agent"
+    }
+  ],
+  "canonical": ".pmcro",
+  "projection": ".agents"
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "pmcro.agent-project/v1",
+  "id": "git-agent",
+  "description": "Local Git domain orchestrator for bounded repository inspection and explicit local commit mechanics.",
+  "derivedFrom": "A:\\marketplace\\eng\\staging-git-agent\\plugins\\git",
+  "template": "agent-skills-template",
+  "canonical": ".pmcro",
+  "projection": ".agents",
+  "hostChain": ".claude/.grok/.cursor/.github -> .agents -> .pmcro",
+  "requiredSkillShape": [
+    "SKILL.md",
+    "agents/",
+    "scripts/",
+    "references/",
+    "assets/",
+    "tests/"
+  ],
+  "autonomousLoop": {
+    "enabled": true,
+    "questionGate": false,
+    "onQuestion": "resolve-from-context-or-halt",
+    "phaseOrder": [
+      "orchestrate",
+      "plan",
+      "make",
+      "check",
+      "reflect"
+    ]
+  },
+  "orchestratorRole": "domain-orchestrator",
+  "agentIsOrchestrator": true
+}
