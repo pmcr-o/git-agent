@@ -1,0 +1,7 @@
+{
+    "registered":  true,
+    "agent":  "git-commit-agent",
+    "plugin":  "git",
+    "description":  "Create a bounded local Git commit from explicit workspace-relative paths. Dry-run by default; Apply stages only named paths and commits locally. Never pushes.",
+    "skill":  "commit-files"
+}

@@ -1,0 +1,7 @@
+{
+    "registered":  true,
+    "agent":  "git-inspect-agent",
+    "plugin":  "git",
+    "description":  "Inspect a workspace Git repository using read-only status, branch, HEAD, log, and diff-summary operations.",
+    "skill":  "inspect-repository"
+}

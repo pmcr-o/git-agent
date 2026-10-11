@@ -1,0 +1,8 @@
+{
+  "name": "git",
+  "version": "0.1.0",
+  "description": "Bounded local Git mechanics. Read-only inspection may execute explicitly; local commits require explicit Apply and exact paths. No push capability.",
+  "skills": [
+    "./skills/"
+  ]
+}

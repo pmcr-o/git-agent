@@ -1,0 +1,8 @@
+{
+  "workspace": ".",
+  "paths": [
+    "example.txt"
+  ],
+  "message": "Example local commit",
+  "apply": false
+}
